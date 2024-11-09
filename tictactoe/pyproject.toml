@@ -1,0 +1,23 @@
+[project]
+name = "ttt_rl"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Matt Zhang", email = "set.stun@gmail.com"},
+]
+dependencies = [
+    "torch>=2.4.1",
+    "pytest>=8.3.3",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "-e file:///${PROJECT_ROOT}/#egg=ttt-rl",
+]
